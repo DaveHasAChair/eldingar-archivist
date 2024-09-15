@@ -1,9 +1,241 @@
-[
-  {
-    "id": "eldingar_archivist.xml",
-    "name": "Eldingar Archivist",
-    "description": "A summoning-based class with telekinetic abilities and knowledge-based powers from the Realm of Eldingar.",
-    "source": "Homebrew",
-    "link": "https://raw.githubusercontent.com/DaveHasAChair/eldingar-archivist/main/eldingar_archivist.xml"
-  }
-]
+<?xml version="1.0" encoding="utf-8"?>
+<compendium>
+  <class id="eldingar_archivist" name="Eldingar Archivist" hitdice="1d6">
+    <description>
+      <text>A master of summoning creatures and controlling telekinetic forces through the ancient library of Eldingar.</text>
+    </description>
+
+    <!-- Proficiencies -->
+    <proficiencies>
+      <armor>
+        <proficiency>None</proficiency>
+      </armor>
+      <weapons>
+        <proficiency>Simple Weapons</proficiency>
+      </weapons>
+      <savingthrows>
+        <savingthrow>Intelligence</savingthrow>
+        <savingthrow>Wisdom</savingthrow>
+      </savingthrows>
+      <skills>
+        <skill>Arcana</skill>
+        <skill>History</skill>
+        <skill>Investigation</skill>
+        <skill>Nature</skill>
+        <skill>Religion</skill>
+      </skills>
+    </proficiencies>
+
+    <!-- Levels -->
+    <levels>
+      
+      <!-- Level 1 -->
+      <level number="1">
+        <hitdice>1d6</hitdice>
+        <feature id="summon_booklings">
+          <name>Summon: Booklings</name>
+          <text>Summon two flying booklings with basic slashing abilities. AC: 12, HP: 10, Speed: 30 ft fly, Attack: +4 to hit, 1d4 slashing.</text>
+        </feature>
+        <feature id="librarians_waste">
+          <name>Librarian's Waste</name>
+          <text>Summon 15 gallons of glowing ink. You can telekinetically control the ink like a novice hydromancer.</text>
+        </feature>
+      </level>
+
+      <!-- Level 2 -->
+      <level number="2">
+        <feature id="master_of_languages">
+          <name>Master of Languages</name>
+          <text>Instantly learn any language by reading the appropriate reference materials. Can be used once per day.</text>
+        </feature>
+        <feature id="enigmatic_authorship">
+          <name>Enigmatic Authorship</name>
+          <text>Encrypt any message, allowing only the intended recipient or another Eldingar Archivist to read it.</text>
+        </feature>
+      </level>
+
+      <!-- Level 3 -->
+      <level number="3">
+        <feature id="summon_seering_specter">
+          <name>Summon: Seering Specter</name>
+          <text>Summon a specter that detects magical items and effects within 50 ft. AC: 13, HP: 18, Speed: 20 ft fly.</text>
+        </feature>
+        <feature id="prism_of_the_deceitful">
+          <name>Prism of the Deceitful</name>
+          <text>Create a doppelganger that mimics your appearance for up to 1 minute. It has AC 10, HP 1, and disappears after 1 hit or when concentration is lost.</text>
+        </feature>
+      </level>
+
+      <!-- Level 4 -->
+      <level number="4">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 5 -->
+      <level number="5">
+        <feature id="eldingars_mantle">
+          <name>Eldingar's Mantle</name>
+          <text>Grants resistance to psychomantic (mental) attacks based on your level. Experts resist expert-level psychomancers, Masters resist master-level psychomancers.</text>
+        </feature>
+        <feature id="extrasensory_perception">
+          <name>Extrasensory Perception</name>
+          <text>You gain a 15-foot radius of 360-degree vision, granting a +2 bonus to passive Perception and immunity to being surprised.</text>
+        </feature>
+      </level>
+
+      <!-- Level 6 -->
+      <level number="6">
+        <feature id="librarians_waste_upgrade">
+          <name>Librarian's Waste Upgrade</name>
+          <text>You can now summon 25 gallons of ink and control it with intermediate proficiency. It blinds targets on a successful attack, and deals 1d6 acid damage.</text>
+        </feature>
+        <feature id="orb_of_the_headmaster_scribe">
+          <name>Orb of The Headmaster Scribe</name>
+          <text>Temporarily gain proficiency in two skills (Medicine, Alchemy, or Nature) for 1 hour. Knowledge fades after use.</text>
+        </feature>
+      </level>
+
+      <!-- Level 7 -->
+      <level number="7">
+        <feature id="summon_ayrliax_crawlers">
+          <name>Summon: Ayrliax Crawlers</name>
+          <text>Summon Arachnoid creatures with web-shooting and toxic spit abilities. AC: 14, HP: 24, Web restrains, Spit deals 2d6 acid damage.</text>
+        </feature>
+        <feature id="overwhelm">
+          <name>Overwhelm</name>
+          <text>Twice per day, stun two targets within 30 feet for 1d4 rounds. Overwhelms their minds with forbidden knowledge. DC = Spell Save DC, Intelligence save.</text>
+        </feature>
+      </level>
+
+      <!-- Level 8 -->
+      <level number="8">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 9 -->
+      <level number="9">
+        <feature id="runic_development">
+          <name>Runic Development</name>
+          <text>Gain proficiency with runecasting. You can now read and understand all magical runes as a trained runecaster.</text>
+        </feature>
+      </level>
+
+      <!-- Level 10 -->
+      <level number="10">
+        <feature id="librarians_waste_upgrade_master">
+          <name>Librarian's Waste Upgrade (Master)</name>
+          <text>Summon 50 gallons of ink with expert control. You can blind creatures for 1d6 rounds or deal 2d6 acid damage.</text>
+        </feature>
+        <feature id="foresight_of_knowledge">
+          <name>Foresight of Knowledge</name>
+          <text>Add your Intelligence modifier to your initiative rolls in addition to your Dexterity modifier.</text>
+        </feature>
+      </level>
+
+      <!-- Level 11 -->
+      <level number="11">
+        <feature id="ring_of_arcane_mages">
+          <name>Ring of the Arcane Mages</name>
+          <text>Gain access to Pyromancy, Hydromancy, or Herbomancy at Expert level. You can cast 3 spells per day with the ring, but consecutive spells cause 1 level of exhaustion.</text>
+        </feature>
+      </level>
+
+      <!-- Level 12 -->
+      <level number="12">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 13 -->
+      <level number="13">
+        <feature id="ezgins_old_knowledge">
+          <name>Ez'gins Old Knowledge</name>
+          <text>Create a 35-foot telekinetic field, allowing you to choke, throw, or crush enemies. Deals 3d6 telekinetic damage on a failed Strength save (DC = Spell Save DC).</text>
+        </feature>
+      </level>
+
+      <!-- Level 14 -->
+      <level number="14">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 15 -->
+      <level number="15">
+        <feature id="divine_coronation">
+          <name>The Divine Coronation</name>
+          <text>Disable one Master-level caster for 1 minute and gain true sight for the duration. Weaken Archmancers with disadvantage on their attack rolls.</text>
+        </feature>
+      </level>
+
+      <!-- Level 16 -->
+      <level number="16">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 17 -->
+      <level number="17">
+        <feature id="summon_augur_of_souls">
+          <name>Summon: Augur of Souls</name>
+          <text>Summon a giant floating eye that freezes enemies within 15 ft and reads their memories. Failing a Wisdom save results in being paralyzed for 1 round. Augur can deal 2d10 force damage if mind-reading fails.</text>
+        </feature>
+      </level>
+
+      <!-- Level 18 -->
+      <level number="18">
+        <feature id="transcendent_voice">
+          <name>Transcendent Voice</name>
+          <text>Cast spells using only verbal components, speeding up casting time and making your spells harder to counterspell (casters have disadvantage on counterspelling you).</text>
+        </feature>
+      </level>
+
+      <!-- Level 19 -->
+      <level number="19">
+        <feature id="ability_score_improvement">
+          <name>Ability Score Improvement</name>
+          <text>Increase one ability score by 2, or two ability scores by 1. You cannot increase an ability score above 20.</text>
+        </feature>
+      </level>
+
+      <!-- Level 20 -->
+      <level number="20">
+        <feature id="librarians_waste_upgrade_oracle">
+          <name>Librarian's Waste Upgrade (Oracle)</name>
+          <text>Summon 100 gallons of ink with master control. You can blind creatures for 2d4 rounds or deal 3d6 acid damage.</text>
+        </feature>
+        <feature id="ezgins_old_knowledge_upgrade">
+          <name>Ez'gins Old Knowledge (Upgrade)</name>
+          <text>Increase the range of your telekinetic field to 50 feet. Lift and crush larger objects and deal 4d6 telekinetic damage.</text>
+        </feature>
+      </level>
+
+    </levels>
+
+    <!-- Summon Points Resource -->
+    <resource id="summon_points">
+      <name>Summon Points</name>
+      <description>Points used to fuel summoning abilities.</description>
+      <points>
+        <point level="1">2</point>
+        <point level="5">5</point>
+        <point level="10">10</point>
+        <point level="15">15</point>
+        <point level="20">20</point>
+      </points>
+    </resource>
+
+  </class>
+</compendium>
