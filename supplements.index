@@ -1,0 +1,7 @@
+{
+  "id": "eldingar_archivist",
+  "name": "Eldingar Archivist",
+  "description": "A summoning-based class with telekinetic abilities and knowledge-based powers from the Realm of Eldingar.",
+  "source": "Homebrew",
+  "link": "https://github.com/DaveHasAChair/eldingar-archivist/blob/main/eldingar_archivist.xml"
+}
