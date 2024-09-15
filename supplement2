@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <name>Custom Supplements</name>
+    <description>Custom supplements for homebrew classes and content.</description>
+    <author url="https://github.com/DaveHasAChair/eldingar-archivist">dave</author>
+    <update version="1.0.0">
+      <file name="supplements.index" url="https://raw.githubusercontent.com/DaveHasAChair/eldingar-archivist/main/supplements.index" />
+    </update>
+  </info>
+  <files>
+    <!-- Eldingar Archivist Class -->
+    <file name="eldingar_archivist.xml" url="https://raw.githubusercontent.com/DaveHasAChair/eldingar-archivist/main/eldingar_archivist.xml" />
